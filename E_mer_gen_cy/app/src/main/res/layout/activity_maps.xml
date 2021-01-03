@@ -1,0 +1,66 @@
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+
+
+    <fragment
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_margin="10dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/B_hopistals" />
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/B_hopistals"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:background="@drawable/round_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TF_location"
+        android:onClick="onClick"
+        android:text="Hospitals"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/B_schools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/B_hopistals"
+        android:onClick="onClick"
+        android:text="Police"
+        android:layout_toRightOf="@+id/B_hopistals" />
+
+    <Button
+        android:id="@+id/B_restaurants"
+        android:layout_width="wrap_content"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/B_schools"
+        android:onClick="onClick"
+        android:text="Restautants"
+        android:layout_toRightOf="@+id/B_schools" />
+
+</RelativeLayout>
